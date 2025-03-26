@@ -5,7 +5,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Chris Isaacs
-email: me [at] this domain
+#email: me [at] this domain
 description: >- 
   Hi there! I'm Chris Isaacs. I deliver software for a living 
 
@@ -14,10 +14,11 @@ description: >-
   and solving business problems using technology. 
   
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://chrisaacs.com"
+url: "https://www.chrisaacs.com"
 twitter_username:   OdiousCode
 github_username:    chsscs
 linkedin_username:  chrisaacs
+
 
 # Build settings
 theme: minima
