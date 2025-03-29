@@ -1,0 +1,31 @@
+name: Production Deployment
+on:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: 'release'
+        required: true
+        type: string
+
+jobs:
+  pipeline:
+    needs: relase-info
+    uses: ./.github/workflows/pipeline.yml
+    with:
+      refs: ${{ inputs.release }}
+      code-directory: /
+      environmnet: production
+      site-prefix: www
+
+  relase-info:
+    runs-on: ubuntu-latest
+    environment: production
+    defaults:
+      run:
+        shell: bash
+    steps:
+    - name: info
+      run: |
+        echo "Release: $release"
+      env:
+        release: ${{ inputs.release }}
