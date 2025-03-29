@@ -19,6 +19,13 @@ twitter_username:   OdiousCode
 github_username:    chsscs
 linkedin_username:  chrisaacs
 
+permalink: /:year/:month/:day/:title.html
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
 
 # Build settings
 theme: minima

@@ -6,6 +6,8 @@ categories: jekyll update
 ---
 
 
+![image tooltip here](/assets/images/logo.png)
+
 Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
