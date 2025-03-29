@@ -6,8 +6,8 @@ permalink: /todo/
 
 # Todo List
 
-- [ ] Choose a platform
-- [ ] Decide on hosting
-- [ ] Deploy site
+- [x] ~~Choose a platform~~
+- [x] ~~Decide on hosting~~
+- [x] ~~Deploy site~~
 - [ ] Publish first post
 - [ ] Update TODO
