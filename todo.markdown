@@ -10,4 +10,7 @@ permalink: /todo/
 - [x] ~~Decide on hosting~~
 - [x] ~~Deploy site~~
 - [ ] Publish first post
+- [] Telemetry 
+- [ ] Publish another post
+- [ ] Hosting
 - [ ] Update TODO
