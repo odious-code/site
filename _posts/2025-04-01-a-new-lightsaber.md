@@ -2,7 +2,7 @@
 layout: post
 title:  "A New Lightsaber"
 date:   2025-04-01 00:00:00 +0000
-categories: blog tools
+categories: blog tools jekyll
 ---
 
 Over the years I have considered keeping a blog and for one reason or another have always found reasons not to put something together. Having made the decision to give my thoughts a permalink, I enjoyed procrastinating, a little, about how I was going to deface the internet with my content. 
