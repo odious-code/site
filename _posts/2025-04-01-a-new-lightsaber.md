@@ -2,7 +2,7 @@
 layout: post
 title:  "A New Lightsaber"
 date:   2025-04-01 00:00:00 +0000
-categories: blog tools
+categories: blog tools jekyll
 ---
 
 Over the years I have considered keeping a blog and for one reason or another have always found reasons not to put something together. Having made the decision to give my thoughts a permalink, I enjoyed procrastinating, a little, about how I was going to deface the internet with my content. 
@@ -11,7 +11,7 @@ The philosophy used to guide my choice of solution can be described as somewhere
 
 Jekyll is a reasonably ubiquitous tool for eagerly rendering html websites from markdown content and offers customisation through simple templating, a bunch of themes, and plugins. The site can be rendered on a local machine and the resulting static site can be dropped onto a webserver using the protocol of choice. It is highly compelling and is my first choice. Rendering content offline and delivering it over the wire through a CDN is, in many cases, the most optimal solution and requires few moving parts. This is the solution I’m intending to implement as my first iteration.  
 
-I’m going to proportionally invest my time across the following three activities:  
+I’m going to proportionally invest my time across the following three activities:
 
 - Content: Namely drafting, publishing and marketing posts 
 
