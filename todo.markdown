@@ -11,6 +11,6 @@ permalink: /todo/
 - [x] ~~Deploy site~~
 - [x] ~~Publish first post~~
 - [ ] Telemetry 
-- [ ] Publish another post
+- [x] ~~Publish another post~~
 - [ ] Hosting
 - [ ] Update TODO
