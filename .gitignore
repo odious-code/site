@@ -3,3 +3,11 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# VS Code
+.vscode/
+
+# Spec Kit / specify-cli private files & credentials
+.specify/memory/*_local*
+.specify/memory/private*
+.github/agents/private*
