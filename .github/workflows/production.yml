@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       release:
-        description: 'Deploy to production (confirm)'
+        description: 'Release tag to deploy (e.g. 0.0.8). Create a tag + GitHub Release first, then pass the tag name here.'
         required: true
-        type: boolean
+        type: string
 permissions:
   contents: read
   pages: write
@@ -16,7 +16,7 @@ jobs:
     needs: relase-info
     uses: ./.github/workflows/pipeline.yml
     with:
-      refs: main
+      refs: ${{ inputs.release }}
       code-directory: /
       environmnet: production
       site-prefix: www
