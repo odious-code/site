@@ -51,7 +51,9 @@ P4Merge is a visual diff and merge tool which can be configured for git accordin
 [mergetool]
         keepBackup = false
 [mergetool "p4merge"]
-        cmd = p4merge.exe \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+        cmd = p4merge.exe \"$(wslpath -aw $BASE)\" \"$(wslpath -aw $LOCAL)\" \"$(wslpath -aw $REMOTE)\" \"$(wslpath -aw $MERGED)\"
+[difftool "p4merge"]
+        cmd = p4merge.exe \"$(wslpath -aw $LOCAL)\" \"$(wslpath -aw $REMOTE)\"
 [commit]
         gpgsign = true
 [tag]
