@@ -5,6 +5,9 @@ date:   2025-04-01 00:00:00 +0000
 categories: blog tools jekyll
 ---
 
+[lightsaber]: /assets/images/new-lightsaber.png "A New Lightsaber"
+![A New Lightsaber][lightsaber]
+
 Over the years I have considered keeping a blog and for one reason or another have always found reasons not to put something together. Having made the decision to give my thoughts a permalink, I enjoyed procrastinating, a little, about how I was going to deface the internet with my content. 
 
 The philosophy used to guide my choice of solution can be described as somewhere between “not invented here” and using a social media platform. At one end of the spectrum there are social media platforms and platforms like blogger, Tumblr, and WordPress. These are good for cranking out content and offer plenty of customisation and ways of exporting/migrating content, for when the platform becomes stale, uncool, boring, or otherwise undesirable. At the other end of the spectrum, there is writing a blogging application using a web application framework such as rails, .net, node, or flask, these increases the maintenance surface area quite considerably. While there exists some very convenient turnkey tools for hosting web apps, such as Heroku and Digital Ocean, they are not as economical as the cloud platforms they are built on. Platform native solutions for hosting web apps such as AWS, Azure and GCP are very mature, safe and reliable as are their respective hosting options for cloud native platforms. These options all “wiff” of operationally astronautical, at this stage of the project, and feel like overkill.  
