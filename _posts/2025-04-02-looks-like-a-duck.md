@@ -2,12 +2,10 @@
 layout: post
 title:  "Looks Like A Duck"
 date:   2025-04-02 00:00:00 +0000
-categories: blog tools source control
+tags: blog tools source-control
+img: /assets/images/looks-like-a-duck.png
 ---
 
-
-[logo]: /assets/images/looks-like-a-duck.png "Looks Like A Duck"
-![no image error][logo]
 
 When considering source control for this project, I tried to deliberately think about and judge the options before making, what superficially felt to be, an instinctual choice. From one perspective, thinking about the problem as a content creator and the various content management systems I have worked with and built previously. Then from the other perspective, as a coder, considering the tools which make my life easy and my tasks enjoyable. I spent a little more time considering this perspective and reminisced about the various source control systems which I have experience with, the influences and the logic used in selecting them, and my early adventures not using version control tools. 
 

@@ -1,53 +1,49 @@
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Chris Isaacs
-#email: me [at] this domain
-description: >- 
-  Hi there! I'm Chris Isaacs. I deliver software for a living 
+description: >-
+  Hi there! I'm Chris Isaacs. I deliver software for a living
+  in a bunch of different domains. I enjoy working with people
+  and solving business problems using technology.
 
-  in a bunch of different domains. I enjoy working with people  
-
-  and solving business problems using technology. 
-  
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "https://www.chrisaacs.com"
-twitter_username:   OdiousCode
-github_username:    chsscs
-linkedin_username:  chrisaacs
-
 permalink: /:year/:month/:day/:title.html
+
+# Author settings
+author: Chris Isaacs
+author-pic: author-silhouette.png
+about-author: Technical director and hands-on engineer with 20+ years shipping software across gaming, finance, publishing and beyond.
+
+# Contact / social links
+twitter_username: OdiousCode
+github_username: chsscs
+linkedin_username: chrisaacs
+
+# Contact links (adam-blog fields — leave blank to hide)
+email:
+phone:
+website:
+
+# Third-party integrations (leave blank to disable)
+google-analytics:
+disqus-shortname:
+mailchimp-list:
+
+# Pagination
+paginate: 6
+paginate_path: /page:num/
+
+# Include _pages directory
+include:
+  - _pages
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
 
 defaults:
   - scope:
       path: "assets/images"
     values:
       image: true
-
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/

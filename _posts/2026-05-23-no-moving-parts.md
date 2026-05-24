@@ -2,11 +2,9 @@
 layout: post
 title:  "No Moving Parts"
 date:   2026-05-23 00:00:00 +0000
-categories: blog tools deployment hosting
+tags: blog tools deployment hosting
+img: /assets/images/no-moving-parts.png
 ---
-
-[header]: /assets/images/no-moving-parts.png "No Moving Parts"
-![No Moving Parts][header]
 
 Having settled on Jekyll as the platform and GitHub as the source control and content management solution, the next decision was how to host the site and get it in front of a browser. The answer, it turns out, was already mostly made for me.
 

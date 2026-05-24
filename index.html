@@ -1,0 +1,19 @@
+---
+layout: home-page
+---
+{% for post in paginator.posts %}
+  <div class="card-wrapper">
+    <a href="{{ post.url | prepend: site.baseurl }}" class="post-card" style="background: url({{ post.img | prepend: site.baseurl }}) center no-repeat; background-size: cover;">
+      <div class="post-card-content">
+        <div class="post-card-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+          {% for tag in post.tags limit:2 %}
+            <span class="post-card-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        <h2 class="post-card-title">{{ post.title }}</h2>
+        <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+      </div>
+    </a>
+  </div>
+{% endfor %}

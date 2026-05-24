@@ -1,0 +1,27 @@
+<section class="author-box">
+  <img src="{{ site.baseurl }}/assets/images/{{ site.author-pic }}" alt="{{ site.author }}" class="author-img">
+  <div class="author-desc">
+    <h2>{{ site.author }}</h2>
+    <p>{{ site.about-author }}</p>
+    <ul>
+      {% if site.email %}
+        <li class="email"><a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o"></i></a></li>
+      {% endif %}
+      {% if site.phone %}
+        <li class="phone"><a href="tel:{{ site.phone }}"><i class="fa fa-phone"></i></a></li>
+      {% endif %}
+      {% if site.website %}
+        <li class="website"><a href="{{ site.website }}" target="_blank"><i class="fa fa-globe"></i></a></li>
+      {% endif %}
+      {% if site.twitter_username %}
+        <li class="twitter"><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      {% endif %}
+      {% if site.github_username %}
+        <li class="github"><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github"></i></a></li>
+      {% endif %}
+      {% if site.linkedin_username %}
+        <li class="linkedin"><a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      {% endif %}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,64 @@
+---
+layout: home-page
+title: About
+permalink: /about/
+---
+<div class="small-wrapper">
+  <div class="about-container">
+    <section class="about-header">
+      <div class="author-image-container">
+        <img src="{{ site.baseurl }}/assets/images/{{ site.author-pic }}" alt="{{ site.author }}">
+      </div>
+      <p class="subtitle">{{ site.about-author }}</p>
+    </section>
+    <section class="about-body">
+      <ul class="contact-list">
+      {% if site.email %}
+        <li class="email"><a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o"></i></a></li>
+      {% endif %}
+
+      {% if site.phone %}
+        <li class="phone"><a href="tel:{{ site.phone }}"><i class="fa fa-phone"></i></a></li>
+      {% endif %}
+
+      {% if site.website %}
+        <li class="website"><a href="https://{{ site.website }}" target="_blank"><i class="fa fa-globe"></i></a></li>
+      {% endif %}
+
+      {% if site.linkedin_username %}
+        <li class="linkedin"><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      {% elsif site.linkedin %}
+        <li class="linkedin"><a href="https://www.linkedin.com/in/{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      {% endif %}
+
+      {% if site.github_username %}
+        <li class="github"><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github"></i></a></li>
+      {% elsif site.github %}
+        <li class="github"><a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github"></i></a></li>
+      {% endif %}
+
+      {% if site.twitter_username %}
+        <li class="twitter"><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      {% elsif site.twitter %}
+        <li class="twitter"><a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      {% endif %}
+      </ul>
+    </section> <!-- End About Body-->
+    
+    <section class="about-content" style="margin-top: 2rem; line-height: 1.8; font-size: 1.1rem; color: #444;">
+      <p>My name is Chris Isaacs and I have been helping businesses build great products and services for over twenty years. Most recently with Moody’s, delivering infrastructure tooling for their flagship GPT platform and a portfolio of applications as part of the Creativity, Experience and Innovation group.</p>
+
+      <p>I’m a proficient technical director and highly experienced hands-on engineer with expertise in DevOps, product and platform delivery. A conscientious leader skilled in performance & quality management, talent development & retention and partnering across functions, and with vendors, clients, and stakeholders.</p>
+
+      <p>I have experience of several different industries including gaming, genealogy, publishing, gambling, and finance. I have shipped software for a bunch of different platforms, from games consoles and mobile to enterprise server and web applications. As well as working with large organisations, I have also worked with a bunch of SMEs and helped found and bootstrap a startup.</p>
+
+      <p>I know how to build, ship and operate software products and services, infrastructure, automated tools and integrations while supporting the development of business processes and operations to create real value through innovation.</p>
+
+      <p style="margin-top: 2rem; border-top: 1px solid #eee; padding-top: 1.5rem;">
+        You can find the source code for this blog on GitHub:
+        <a href="https://github.com/odious-code" target="_blank">odious-code</a> /
+        <a href="https://github.com/odious-code/site" target="_blank">site</a>
+      </p>
+    </section>
+  </div> <!-- End About Container -->
+</div> <!-- End Small Wrapper -->
