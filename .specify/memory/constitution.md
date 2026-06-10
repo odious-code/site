@@ -4,6 +4,7 @@
 * **Platform**: Jekyll 4.4.1 static site generator.
 * **Theme**: Minima (~> 2.5) overridden for custom assets and layout overrides.
 * **Environment**: Local testing executed inside Windows Subsystem for Linux (WSL) Ubuntu.
+* **IDE**: Antigravity IDE (Gravity IDE) launched from WSL using `/mnt/c/Users/ctssc/AppData/Local/Programs/Antigravity\ IDE/Antigravity\ IDE.exe`.
 * **Hosting**: GitHub Pages deployed via custom GitHub Actions (`production.yml` calling `pipeline.yml` using modern `ruby/setup-ruby` and `bundle exec jekyll build`).
 
 ## Core Principles
@@ -15,7 +16,7 @@ The site compiles strictly into flat, lightning-fast static HTML. Content is dra
 Visuals must look creative, harmoniously colored, and professional. Avoid default browser elements or generic, plain styling. Any modifications or assets (like AI-generated graphics) should enhance readability and design premium feel.
 
 ### III. Branching & PR-Driven Development
-All substantial updates (including writing new posts, visual whittling, or workflow modifications) must be performed in isolated Git feature branches (e.g., `post_3`). No direct commits to `main`. 
+All substantial updates (including writing new posts, visual whittling, or workflow modifications) must be performed in isolated Git feature branches. For all new blog posts, always create a GitHub Pull Request (PR) and perform a **Squash Merge** into main to preserve a clean and concise main commit history. Direct merges or direct commits to main without PR review are strictly avoided.
 
 ### IV. Local First Verification
 Every modification must be built and tested locally in the WSL development server on port `4001` (`bundle exec jekyll serve --host 0.0.0.0 --port 4001`) before any code is pushed or published to GitHub.

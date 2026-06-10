@@ -11,3 +11,8 @@ vendor
 .specify/memory/*_local*
 .specify/memory/private*
 .github/agents/private*
+
+# Ignore all specs, plans, and reports locally
+specs/
+plans/
+_reports/
