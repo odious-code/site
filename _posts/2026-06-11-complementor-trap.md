@@ -84,7 +84,7 @@ Do not try to extract every cent of profit from your ecosystem. If your develope
 
 Michael Porter’s Five Forces remains a powerful tool for analyzing traditional, consolidated physical markets. But in the modern, interconnected software landscape, it is an incomplete map. 
 
-If you view business strategy solely as a zero-sum war against your competitors, suppliers, and customers, you will build closed, sterile systems. By expanding the board to include complementors, you can shift your strategy from defensive gatekeeping to collaborative growth. The most valuable software companies of the next decade will not be the ones that build the strongest walls, but the ones that build the most welcoming platforms.
+If you view business strategy solely as a zero-sum war against your competitors, suppliers, and customers, you will build closed, sterile systems. By expanding the board to include complementors, you can shift your strategy from defensive gatekeeping to collaborative growth. Think of it as playing a game of "Cyber Settlers"—where rather than blocking other players, your success is built on trading resources, forging routes, and developing shared settlements across a collaborative platform ecosystem (Teuber 1995). The most valuable software companies of the next decade will not be the ones that build the strongest walls, but the ones that build the most welcoming platforms.
 
 ![Expanding the Board Catan-style Tech Map](/assets/images/expanding-the-board.png)
 
@@ -96,6 +96,7 @@ If you view business strategy solely as a zero-sum war against your competitors,
 * **Grant, R. M. and Jordan, J. J.** (2015) [*Foundations of Strategy*](https://www.amazon.co.uk/dp/1118914708). 2nd ed. Chichester: Wiley.
 * **Kim, W. C. and Mauborgne, R. A.** (2015) [*Blue Ocean Strategy*](https://www.amazon.co.uk/dp/1625274491). Expanded ed. Boston: Harvard Business Publishing.
 * **Porter, M. E.** (2004) [*Competitive Strategy: Techniques for Analyzing Industries and Competitors*](https://www.amazon.co.uk/dp/0743260880). Export ed. New York: Free Press.
+* **Teuber, K.** (1995) [*Catan*](https://www.catan.com/). Board Game. Stuttgart: Kosmos.
 * [**Wu, J.**](https://www.abdn.ac.uk/business/people/profiles/jie.wu) (2023a) *BU5048 Business Strategy*. Lecture Notes, University of Aberdeen (26th September 2023).
 * [**Wu, J.**](https://www.abdn.ac.uk/business/people/profiles/jie.wu) (2023b) *BU5048 Business Strategy*. Lecture Notes, University of Aberdeen (28th September 2023).
 
