@@ -86,6 +86,8 @@ Michael Porter’s Five Forces remains a powerful tool for analyzing traditional
 
 If you view business strategy solely as a zero-sum war against your competitors, suppliers, and customers, you will build closed, sterile systems. By expanding the board to include complementors, you can shift your strategy from defensive gatekeeping to collaborative growth. The most valuable software companies of the next decade will not be the ones that build the strongest walls, but the ones that build the most welcoming platforms.
 
+![Expanding the Board Catan-style Tech Map](/assets/images/expanding-the-board.png)
+
 ---
 
 ## References
