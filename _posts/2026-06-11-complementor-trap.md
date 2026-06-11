@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Complementor Trap: Why Porter's Five Forces Leaves Tech Giants Blind"
+title:  "The Complementor Trap"
 date:   2026-06-11 00:00:00 +0000
 tags: business-strategy platform-economics software-engineering api-ecosystems
 img: /assets/images/complementor-trap.png
