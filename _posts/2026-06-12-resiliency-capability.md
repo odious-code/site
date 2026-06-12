@@ -22,7 +22,7 @@ In complex, highly concurrent systems, trying to prevent every failure by design
 
 In a physical supply chain, a logistics failure (e.g., a delayed shipping truck) typically results in back-orders or inventory delays. The transaction itself is delayed, but the revenue is often preserved. 
 
-In digital service supply networks, however, the product is entirely **perishable, inseparable, and homogeneous** (Slack & Brandon-Jones 2021). 
+In digital service supply networks, however, the product is entirely **perishable, inseparable, and homogeneous** (Christopher 2023; Slack & Brandon-Jones 2021). 
 
 * **Perishability**: A digital service transaction is consumed at the exact moment of demand. A sports bettor wants to place a wager on a live event *now*. If the platform cannot accept the transaction due to database lockouts or connection pool exhaustion, the opportunity is gone forever.
 * **Inseparability**: The production of the service (odds processing, transaction ingestion) and its consumption (user placing the bet) happen simultaneously.
@@ -34,24 +34,16 @@ Because of this, digital service networks are highly sensitive to operational ri
 
 ## 2. Dynamic Capabilities: Iterative Critical Incident Management
 
-To secure a sustainable competitive advantage, the Resource-Based View (RBV) argues that a firm must possess resources and capabilities that are **Valuable, Rare, Inimitable, and Organized (VRIO)** (Grant & Jordan 2015). 
+While traditional positioning strategy focuses on industry structure and market entry barriers (Porter 2004), the Resource-Based View (RBV) argues that a firm must possess resources and capabilities that are **Valuable, Rare, Inimitable, and Organized (VRIO)** to secure a sustainable competitive advantage (Grant & Jordan 2015; Wu 2023a). 
 
 In modern software organizations, **resiliency** cannot simply be bought or designed as a static asset. Instead, it must be developed as a **dynamic capability**—the ability to continuously integrate, build, and reconfigure internal competencies to address rapidly changing environments.
 
 This dynamic capability is built through **Iterative Critical Incident Management**. Rather than treating incident response as a blame-oriented firefighting exercise, high-performing teams organize it as a continuous feedback loop:
 
-```mermaid
-graph TD
-    A[Telemetry Alert Trigger] --> B[DevOps Engineer Response]
-    B --> C[Immediate Abatement & Shard Switching]
-    C --> D[Blameless Postmortem retrospective]
-    D --> E[Root Cause & Systemic Analysis]
-    E --> F[Proactive Backlog Upgrades]
-    F -->|Prevents Future Incidents| A
-```
+![Resiliency Performance Improvement Cycle](/assets/images/resiliency-loop.png){: style="display: block; margin: 30px auto; border-radius: 8px; max-width: 100%;"}
 
 1. **Telemetry Trigger**: Real-time instrumentation monitors system behavior and alerts the team before critical thresholds are breached.
-2. **DevOps Alignment**: The engineers who write the code are the same ones who operate it and respond to alerts (DevOps). This ensures deep system context during an active failure.
+2. **DevOps Alignment**: The engineers who write the code are the same ones who operate it and respond to alerts (DevOps). This ensures deep system context during an active failure. This cross-functional alignment of development and operations roles builds strategic human capability, reducing communication overhead during critical incidents (Bailey et al. 2018).
 3. **Immediate Abatement**: Responders isolate failing services or switch traffic pathways to restore availability as quickly as possible.
 4. **Post Incident Analysis (PIA)**: Following resolution, a blameless retrospective is held. The team documents the timeline, walks through every diagnostic step, and reviews what documentation or telemetry was missing or misleading.
 5. **Proactive Backlog Upgrades**: Systemic causes are fed back into the sprint backlog—updating runbooks, refactoring brittle code paths, and introducing new telemetry rules.
@@ -68,14 +60,7 @@ In high-concurrency environments, a primary source of operational risk is the de
 
 To mitigate this risk, resilient organizations deploy a structural pattern called **Blue-Green Deployments**:
 
-```mermaid
-graph LR
-    User([Live Users]) --> Router[Traffic Router]
-    subgraph System Environment
-        Router -->|Active Traffic| Green[Green Shard: Active Production]
-        Router -.->|Idle / Deployment| Blue[Blue Shard: Inactive Staging]
-    end
-```
+![Blue-Green Sharding Route](/assets/images/blue-green-sharding.png){: style="display: block; margin: 30px auto; border-radius: 8px; max-width: 100%;"}
 
 In a Blue-Green deployment architecture:
 * The system is split into two identical production shards: **Blue** and **Green**.
@@ -101,10 +86,18 @@ Resilience is not a project with a start and end date; it is an ongoing capabili
 
 ---
 
+## Conclusion: Preserving the Perishable Transaction
+
+When the final minutes of a major football match are ticking away, or the Super Bowl kick-off is seconds away, your users are not thinking about your architectural diagrams or your release gates. They are thinking about placing their bet. If your systems fail, they switch to a competitor, and that transaction revenue is lost forever.
+
+By building **The Resiliency Capability**—shifting from the illusion of static, upfront defensive design to a dynamic, iterative cycle of continuous improvement—organizations accept the reality of "unknown unknowns." By decoupling deployments via Blue-Green sharding, designing alert systems that prevent cognitive fatigue, and treating every production incident as a source of system improvement, we do not just build more reliable software. We protect the core economic engine of the business, ensuring that when the critical moments arrive, our platforms are ready to capture the transaction.
+
+---
+
 ## References
 
 * **Bailey, C., Mankin, D., Kelliher, C. and Garavan, T.** (2018) [*Strategic Human Resource Management*](https://www.amazon.co.uk/dp/0198705409). New York: Oxford University Press.
-* **Christopher, M.** (2023) [*Logistics and Supply Chain Management*](https://www.amazon.co.uk/dp/1292416186). 6th ed. Harrow, England: Pearson.
+* **Christopher, M.** (2023) [*Logistics and Supply Chain Management*](https://www.amazon.co.uk/dp/1292416181). 6th ed. Harrow, England: Pearson.
 * **Grant, R. M. and Jordan, J. J.** (2015) [*Foundations of Strategy*](https://www.amazon.co.uk/dp/1118914708). 2nd ed. Chichester: Wiley.
 * **Porter, M. E.** (2004) [*Competitive Strategy: Techniques for Analyzing Industries and Competitors*](https://www.amazon.co.uk/dp/0743260880). Export ed. New York: Free Press.
 * **Slack, N. and Brandon-Jones, A.** (2021) [*Operations and Process Management*](https://www.amazon.co.uk/dp/1292350067). 6th ed. Harrow, England: Pearson.
