@@ -38,29 +38,3 @@ layout: default
   {% include search.html %}
   {% include footer.html %}
 </div>
-
-{% if page.content contains "```mermaid" or page.content contains 'class="language-mermaid"' %}
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    mermaid.initialize({ startOnLoad: true, theme: 'dark' });
-    // Convert Kramdown code blocks to mermaid divs
-    var codeBlocks = document.querySelectorAll('code.language-mermaid');
-    codeBlocks.forEach(function(code) {
-      var pre = code.parentNode;
-      var div = document.createElement('div');
-      div.className = 'mermaid';
-      div.textContent = code.textContent;
-      pre.parentNode.replaceChild(div, pre);
-    });
-  });
-</script>
-<style>
-  .mermaid {
-    background: transparent !important;
-    text-align: center;
-    margin: 30px 0;
-  }
-</style>
-{% endif %}
-
