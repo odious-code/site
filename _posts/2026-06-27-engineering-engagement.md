@@ -57,6 +57,6 @@ By ensuring these positions straddle the different functions of HR, processes an
 
 ### References
 * **Bailey, C., Mankin, D., Kelliher, C., and Garavan, T.** (2018) [*Strategic Human Resource Management*](https://www.amazon.co.uk/dp/0198705409). New York: Oxford University Press.
-* **Valentine, S. R., Meglich, P. A., Mathis R. L., and Jackson, J. H.** (2023) [*Human Resource Management*](https://www.amazon.co.uk/dp/1337916598). 16th ed. Boston: Cengage.
+* **Valentine, S. R., Meglich, P. A., Mathis R. L., and Jackson, J. H.** (2023) [*Human Resource Management*](https://www.amazon.co.uk/dp/0357899288). 17th ed. Boston: Cengage.
 
 ![University of Aberdeen Logo](/assets/images/aberdeen-logo.png){: width="160" style="display: block; margin: 20px 0;"}
